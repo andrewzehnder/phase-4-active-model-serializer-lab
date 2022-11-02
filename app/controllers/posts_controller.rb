@@ -3,6 +3,7 @@ class PostsController < ApplicationController
 
   def index
     posts = Post.all
+    # author = Author.find_by(id: params[:author_id])
     render json: posts
   end
 
